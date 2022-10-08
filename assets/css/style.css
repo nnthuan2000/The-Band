@@ -86,7 +86,7 @@ body {
 .btn {
     color: white;
     background-color: black;
-    padding: 8px 16px;
+    padding: 10px 16px;
     border: none;
 }
 
@@ -97,19 +97,18 @@ body {
 }
 
 #main {
-
+    opacity: 1;
     
 }
 
 #header {
-    --height-header: 46px;
-    height: var(--height-header);
+    height: 46px;
     background-color: black;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 #header .nav {
@@ -128,7 +127,7 @@ body {
 
 #header .nav > li a {
     text-decoration: none;
-    line-height: var(--height-header);
+    line-height: 46px;
     padding: 0 24px;
     display: block;
 }
@@ -160,9 +159,10 @@ body {
     display: block;
 }
 
-#header .search-button {
+#header .search-button,
+#header .menu-button {
     color: white;
-    line-height: var(--height-header);
+    line-height: 46px;
     padding: 0 24px;
 }
 
@@ -171,10 +171,26 @@ body {
     cursor: pointer;
 }
 
+#header .search-button:hover .menu-button {
+    color: black;
+}
+
+
+#header .menu-button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .menu-button:hover {
+    background-color: #ccc;
+}
+
 #slider {
     margin-top: 46px;
     padding-top:50%;
-    background: url("/assets/images/chicago.jpg") no-repeat top center / cover; 
+    background: url("../images/chicago.jpg") no-repeat top center / cover; 
     position: relative;
 }
 
@@ -183,6 +199,10 @@ body {
     color: white;
     position: absolute;
     width: 100%;
+}
+
+#slider .slider-content .slider-description {
+    text-shadow: 0 0 4px black;
 }
 
 
@@ -297,13 +317,22 @@ body {
     line-height: 1.5;
 }
 
+#content .contact-info .contact-location a {
+    color: #0000ee;
+    opacity: 0.8;
+}
+
+#content .contact-info .contact-location a:hover {
+    opacity: 1;
+}
+
 #content .contact-location i[class*="ti-"] {
     width: 30px;
     padding-right: 18px;;
 }
 
 #content .contact-input {
-
+    padding-right: 0;
 }
 
 #content .contact-input .form-input {

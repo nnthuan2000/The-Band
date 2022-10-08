@@ -8,6 +8,7 @@
 
     <link rel="shortcut icon" href="./assets/images/icons8-band-64.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 
 </head>
@@ -25,14 +26,18 @@
                         <i class="ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
             <div class="search-button font-15 pull-right">
                 <i class="ti-search"></i>
+            </div>
+
+            <div class="menu-button font-15 pull-right js-menu-button">
+                <i class="ti-menu"></i>
             </div>
         </div>
 
@@ -51,19 +56,19 @@
                     <p class="content-sub-heading mt-24">We love music</p>
                     <p class="band-description mt-16">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                    <div class="band-members mt-64 row">
-                        <div class="band-member col col-third">
-                            <p class="band-member-name">Name</p>
+                    <div class="band-members mt-32 row">
+                        <div class="band-member col col-third s-col-full mt-16">
+                            <p class="band-member-name mt-16">Name</p>
                             <img src="./assets/images/bandmember.jpg" alt="Member" class="band-member-img mt-16">
                         </div>
 
-                        <div class="band-member col col-third">
-                            <p class="band-member-name">Name</p>
+                        <div class="band-member col col-third s-col-full mt-16">
+                            <p class="band-member-name mt-16">Name</p>
                             <img src="./assets/images/bandmember.jpg" alt="Member" class="band-member-img mt-16">
                         </div>
 
-                        <div class="band-member col col-third">
-                            <p class="band-member-name">Name</p>
+                        <div class="band-member col col-third s-col-full mt-16">
+                            <p class="band-member-name mt-16">Name</p>
                             <img src="./assets/images/bandmember.jpg" alt="Member" class="band-member-img mt-16">
                         </div>
                     </div>
@@ -81,34 +86,34 @@
                         <li>November <span class="remaining pull-right">3</span></li>
                     </ul>
                     
-                    <div class="locations row mt-32">
-                        <div class="location col col-third">
+                    <div class="locations row mt-16">
+                        <div class="location col col-third mt-16 s-col-full">
                             <img src="./assets/images/newyork.jpg" alt="New York" class="location-img">
                             <div class="location-content">
                                 <h3 class="location-heading">New York</h3>
                                 <p class="location-date mt-16">Fri 27 Nov 2016</p>
                                 <p class="location-description mt-16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn font-15 mt-16 js-button-buy-ticket">Buy Tickets</button>
+                                <button class="btn font-15 mt-16 s-full-width text-center js-button-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="location col col-third">
+                        <div class="location col col-third mt-16 s-col-full">
                             <img src="./assets/images/paris.jpg" alt="New York" class="location-img">
                             <div class="location-content">
                                 <h3 class="location-heading">New York</h3>
                                 <p class="location-date mt-16">Fri 27 Nov 2016</p>
                                 <p class="location-description mt-16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn font-15 mt-16 js-button-buy-ticket">Buy Tickets</button>
+                                <button class="btn font-15 mt-16 s-full-width text-center js-button-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="location col col-third">
+                        <div class="location col col-third mt-16 s-col-full">
                             <img src="./assets/images/sanfran.jpg" alt="New York" class="location-img">
                             <div class="location-content">
                                 <h3 class="location-heading">New York</h3>
                                 <p class="location-date mt-16">Fri 27 Nov 2016</p>
                                 <p class="location-description mt-16">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn font-15 mt-16 js-button-buy-ticket">Buy Tickets</button>
+                                <button class="btn font-15 mt-16 s-full-width text-center js-button-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -122,31 +127,31 @@
                     <p class="content-sub-heading mt-24">Fan? Drop a note!</p>
 
                     <div class="contact-info row mt-48">
-                        <div class="contact-location col col-half">
+                        <div class="contact-location col col-half s-col-full">
                             <p><i class="ti-location-pin"></i>Chicago, US</p>
-                            <p><i class="ti-mobile"></i>Phone: +84123456789</p>
-                            <p><i class="ti-email"></i>Email: mail@gmail.com</p>
+                            <p><i class="ti-mobile"></i>Phone: <a href="tel:+84123456789">84123456789</a></p>
+                            <p><i class="ti-email"></i>Email: <a href="mailto:mail@gmail.com">mail@gmail.com</a></p>
                         </div>
 
-                        <div class="contact-input col col-half">
+                        <div class="contact-input col col-half s-col-full s-mt-32">
                             <form action="">
                                 <div class="row">
-                                    <div class="col col-half">
+                                    <div class="col col-half s-col-full s-mt-8 s-input-form">
                                         <input type="text" name="" id="" class="form-input" placeholder="Name" required>
                                     </div>
     
-                                    <div class="col col-half">
+                                    <div class="col col-half s-col-full s-mt-8 s-input-form">
                                         <input type="email" name="" id="" class="form-input" placeholder="Email" required>
                                     </div>
                                 </div>
 
                                 <div class="row mt-8">
-                                    <div class="col col-full">
+                                    <div class="col col-full s-input-form">
                                         <input type="text" name="" id="" class="form-input" placeholder="Message" required>
                                     </div>
                                 </div>
 
-                                <button class="btn pull-right mt-16">SEND</button>
+                                <button class="btn pull-right mt-16 s-full-width contact-submit-btn">SEND</button>
                             </form>
                         </div>
                     </div>
@@ -204,6 +209,13 @@
         const modalClose = document.querySelector('.js-modal-close');
         const modalContainer = document.querySelector('.js-modal-container');
 
+        const menuBtn = document.querySelector('.js-menu-button');
+        const header = document.getElementById('header')
+        var headerHeight = header.clientHeight
+
+        const main = document.getElementById('main')
+
+
         for(const buyBtn of buyBtns){
             buyBtn.addEventListener('click', (event) => {
                 modal.classList.add('open');
@@ -220,7 +232,32 @@
 
         modal.addEventListener('click', (event) => {
             modal.classList.remove('open');
+        })        
+
+        // Dong/ mo mobile menu
+        menuBtn.addEventListener('click', (event) => {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            }else {
+                header.style.height = null;
+            }
         })
+        
+        // Tu dong dong khi chon menu
+        const menuItems = document.querySelectorAll('#header .nav > li a[href*="#"]');
+        
+        for(var menuItem of menuItems) {
+            menuItem.addEventListener('click', function (event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    // Bo di thuoc tinh mac dinh
+                    event.preventDefault()
+                }else {
+                    header.style.height = null;
+                }
+            })
+        }
 
     </script>
 
